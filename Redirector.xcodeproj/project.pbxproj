@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2652E1613DBD95700CC08E0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2652E1513DBD95700CC08E0 /* main.cpp */; };
+		A2652E2213DBD98D00CC08E0 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2652E1D13DBD98D00CC08E0 /* main.mm */; };
+		A2652E2313DBD98D00CC08E0 /* OutputRedirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2652E1E13DBD98D00CC08E0 /* OutputRedirector.cpp */; };
+		A2652E2413DBD98D00CC08E0 /* StandardOutputRedirector.m in Sources */ = {isa = PBXBuildFile; fileRef = A2652E2113DBD98D00CC08E0 /* StandardOutputRedirector.m */; };
+		A2652E2813DBD9D300CC08E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2652E2713DBD9D300CC08E0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +27,12 @@
 
 /* Begin PBXFileReference section */
 		A2652E1113DBD95700CC08E0 /* Redirector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Redirector; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2652E1513DBD95700CC08E0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A2652E1713DBD95700CC08E0 /* Redirector.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Redirector.1; sourceTree = "<group>"; };
+		A2652E1D13DBD98D00CC08E0 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		A2652E1E13DBD98D00CC08E0 /* OutputRedirector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutputRedirector.cpp; sourceTree = "<group>"; };
+		A2652E1F13DBD98D00CC08E0 /* OutputRedirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputRedirector.h; sourceTree = "<group>"; };
+		A2652E2013DBD98D00CC08E0 /* StandardOutputRedirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardOutputRedirector.h; sourceTree = "<group>"; };
+		A2652E2113DBD98D00CC08E0 /* StandardOutputRedirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardOutputRedirector.m; sourceTree = "<group>"; };
+		A2652E2713DBD9D300CC08E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2652E2813DBD9D300CC08E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				A2652E1413DBD95700CC08E0 /* Redirector */,
+				A2652E2913DBD9F100CC08E0 /* Frameworks */,
 				A2652E1213DBD95700CC08E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,10 +67,21 @@
 		A2652E1413DBD95700CC08E0 /* Redirector */ = {
 			isa = PBXGroup;
 			children = (
-				A2652E1513DBD95700CC08E0 /* main.cpp */,
-				A2652E1713DBD95700CC08E0 /* Redirector.1 */,
+				A2652E1D13DBD98D00CC08E0 /* main.mm */,
+				A2652E1E13DBD98D00CC08E0 /* OutputRedirector.cpp */,
+				A2652E1F13DBD98D00CC08E0 /* OutputRedirector.h */,
+				A2652E2013DBD98D00CC08E0 /* StandardOutputRedirector.h */,
+				A2652E2113DBD98D00CC08E0 /* StandardOutputRedirector.m */,
 			);
 			path = Redirector;
+			sourceTree = "<group>";
+		};
+		A2652E2913DBD9F100CC08E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2652E2713DBD9D300CC08E0 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,7 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2652E1613DBD95700CC08E0 /* main.cpp in Sources */,
+				A2652E2213DBD98D00CC08E0 /* main.mm in Sources */,
+				A2652E2313DBD98D00CC08E0 /* OutputRedirector.cpp in Sources */,
+				A2652E2413DBD98D00CC08E0 /* StandardOutputRedirector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
